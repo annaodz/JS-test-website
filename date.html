@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Button onclick</h1>
+    <p>When you click the button you will find out what my name is and how long I am learning JavaScript</p>
+    
+    <button id="demo">Click me</button>
+
+<script>
+  document.getElementById("demo").addEventListener("click", myFunction);
+
+function myFunction() {
+  
+// To set two dates to two variables 
+var date1 = new Date("2019-09-01"); 
+var today = new Date(); 
+  
+// To calculate the time difference of two dates 
+var date2 = today.getTime() - date1.getTime(); 
+  
+// To calculate the no. of days between two dates 
+var date2 = date2 / (1000 * 3600 * 24); 
+ 
+//To display the final no. of days (result) 
+  document.getElementById("demo").innerHTML = "Hi! I'm Ann and this is my <br>"+ date2 +"<br>day of learning JS";
+}
+</script>
+
+</body>
+</html>
