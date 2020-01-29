@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/maineCss.css">
+</head>
+<body>
+    <h1>Array1</h1>
+    <p>This array is a 100 random numbers in a result of click of the button every element of the array is multiplied by a random number (from 0 - 10)</p>
+    <button id="demo">Click</button><br><br>
+  <p id = "cos"></p>
+<script>
+   
+
+    var myArray = [];
+    for(var i = 0; i<100; i++){
+        myArray.push(Math.floor((Math.random()*100) + 1));
+    }
+    console.log(myArray);
+ document.getElementById("cos").innerHTML = myArray;
+
+</script>
+   
+
+
+<br><br>
+<a href ="index.html" >Back to first page</a>
+</body>
+</html>
