@@ -19,6 +19,22 @@
 <input type="text" style="text-transform: uppercase;">
 <button onclick="convert()">Convert</button>
 <br><br>
+<h3>Temperature Conversion Table</h3>
+<input type="submit" id= "submitButton" value = "Build Table"/>
+<br><br>
+<div id="details"></div>
+<script>
+var C=0;
+var F=0;
+var startbound=32;
+var endbound=100;
+var increment=3;
+function getC(F){
+return (F-32)*5/9;
+};
+</script>
+
+<br><br>
 <a href ="index.html" >Back to first page</a>
 
 
